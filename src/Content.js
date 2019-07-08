@@ -42,17 +42,18 @@ componentDidUpdate(prevProps) {
         }
     }
 render(){
+  const {updatedData,searchfield}=this.state;
   //filtering updatedData array where (include) data.title or data.name=input.value
-const filteredInfo = this.state.updatedData.filter(data => {
+const filteredInfo = updatedData.filter(data => {
             let a;
             if(data.title){
                 a = data.title;
             } else {
                 a = data.name;
             }
-            return a.toLowerCase().includes(this.state.searchfield.toLowerCase())
+            return a.toLowerCase().includes(searchfield.toLowerCase())
         });
-    if(this.state.updatedData.length<1){
+    if(updatedData.length<1){
         return (<div>
             <h1 className='container' >Loading...</h1>
         </div>)
