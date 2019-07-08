@@ -62,14 +62,14 @@ class App extends Component {
   
   
   render() {
-    const {route,btnName}=this.state;
+    const {route,btnName,scrolling}=this.state;
     return (
       <div>
       <div className="App">
       <div className="bckGrnd">
       <br/><br/><h1 className='colorY' >May<br/>SWAPi<br/>Be with you !</h1>
       </div>
-      <div className='shadow-4' style={{position: this.state.scrolling ? 'fixed' : 'relative', top: 0, width: '100vw', zIndex: 1,backgroundColor:'#F1E4E4',marginTop:'-10px'}}>
+      <div className='shadow-4 barStyle' style={{position: scrolling ? 'fixed' : 'relative', top: 0, width: '100%', zIndex: 1,backgroundColor:'#F1E4E4',marginTop:'-10px'}}>
       <BtnList  onButtonPress={this.ButtonPress} btnName={btnName} />
       </div>
       </div>

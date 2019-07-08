@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Button.css';
 
 const Button=({name,onButtonPress})=>{
 	// capitalize every first letter of the button name
@@ -7,7 +7,7 @@ const Button=({name,onButtonPress})=>{
     return name.charAt(0).toUpperCase() + name.slice(1);
 }
 	return (
-		<button style={{marginTop:'12px',marginBottom:'10px'}} className="f6  pointer shadow-4 dim br2 ph3 pv2 mb2 dib white bg-purple"
+		<button id='btnScreen' className="f6 pointer shadow-4 dim br2 dib white bg-purple"
 		onClick={onButtonPress}
 		>
 		{capitalizeFirstLetter(name)}
