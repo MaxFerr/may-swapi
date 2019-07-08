@@ -3,7 +3,7 @@ import React from 'react';
 
 const PeopleCard= ({name,height,mass,haircolor,skincolor,eyeColor,birthyear,gender,eyecolor}) => {
 	return (
-		<div style={{width: '400px' ,height: '350px', margin: '10px'}}
+		<div style={{maxWidth: '400px' ,height: '350px', margin: '10px'}}
 
 		className= 'tc bg-washed-blue shadow-4 br2 pa3 ba dark-gray b--black-10 mv4 w-100 w-75-m w-45-l mw6 center'>
 			

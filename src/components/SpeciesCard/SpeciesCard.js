@@ -3,7 +3,7 @@ import React from 'react';
 
 const SpeciesCard= ({language,homeworld,name,classification,designation,average_height,skin_colors,hair_colors,eye_colors,average_lifespan}) => {
 	return (
-		<div style={{width: '400px' ,height: '400px', margin: '10px'}}
+		<div style={{maxWidth: '400px' ,height: '400px', margin: '10px'}}
 
 		className= 'tc br2 pa3 bg-washed-blue shadow-4 ba dark-gray b--black-10 mv4 w-100 w-75-m w-45-l mw6 center'>
 			
